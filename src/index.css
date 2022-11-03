@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background: #101010f2;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+  margin:0;
+  padding:0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.drum-outerBorder{
+  background:black;
+  width:1000px;
+  height:500px;
+  border-radius:26px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.drum-innerBorder{
+  background: #0b051a;
+  border-radius: 26px;
+  width:970px;
+  height:465px;
+}
+
+.drum-container{
+  display:grid;
+  grid-template-columns: 70% 30%;
+  height:100%;
+  overflow-y: hidden;
+}
+
+
+.drum-pads{
+    width:100%;
+    height:100%;
+    border-right: 4px solid #c002eb;
+}
+
+.pad{
+  border-radius:15px;
+  height: 125px;
+  border: none;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.pad:hover{
+  filter: drop-shadow(0px 3px 14px #ffffff) brightness(130%);
+
+}
+
+.pad-1{
+  background-color: #d000ff;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+
+.pad-2{
+  background-color: #00ff88;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+
+.pad-3{
+  background-color: #0066FF;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.pad-4{
+  background-color: #7600fd;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.pad-5{
+  background-color: #ff5151;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.pad-6{
+  background-color: #00ccff;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.pad-7{
+  background-color: #AAF0D1;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.pad-8{
+  background-color: #666666;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.pad-9{
+  background-color: #ffe600;
+  filter: contrast(200%);
+      box-shadow: black 3px 3px 5px, rgb(187, 143, 143) 3px 3px 8px;
+}
+
+.playedSoundContainer{
+  background-color: #e2e2e2c7;
+  color: red;
+  height: 100px;
+  width: 12rem;
+  border-radius: 10px;
+  margin: 25px 0 10px 0;
 }
